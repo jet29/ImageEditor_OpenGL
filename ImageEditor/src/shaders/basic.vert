@@ -6,6 +6,11 @@ layout (location = 1) in vec3 vertexColor;
 // Attribute 2 of the vertex
 layout (location = 2) in vec2 vertexTexPos;
 
+// Uniforms
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 projection;
+
 // Vertex data out data
 out vec3 vColor;
 // Vertex texture position
@@ -15,5 +20,5 @@ void main()
 {
 	vTexPos = vertexTexPos;
     vColor = vertexColor;   
-    gl_Position = vec4(vertexPosition, 1.0f);
+    gl_Position = projection * view * model * vec4(vertexPosition, 1.0f);
 }
