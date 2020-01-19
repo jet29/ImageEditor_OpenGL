@@ -1,32 +1,41 @@
 # Prerequisites
-*.d
+/ImageEditor/*.d
 
 # Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+/ImageEditor/*.slo
+/ImageEditor/*.lo
+/ImageEditor/*.o
+/ImageEditor/*.obj
 
 # Precompiled Headers
-*.gch
-*.pch
+/ImageEditor/*.gch
+/ImageEditor/*.pch
 
 # Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+/ImageEditor/*.so
+/ImageEditor/*.dylib
+/ImageEditor/*.dll
 
 # Fortran module files
-*.mod
-*.smod
+/ImageEditor/*.mod
+/ImageEditor/*.smod
 
 # Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+/ImageEditor/*.lai
+/ImageEditor/*.la
+/ImageEditor/*.a
+/ImageEditor/*.lib
 
 # Executables
-*.exe
-*.out
-*.app
+/ImageEditor/*.exe
+/ImageEditor/*.out
+/ImageEditor/*.app
+
+# visual studio metafiles
+/ImageEditor/.vs
+
+# x64 files
+/ImageEditor/x64
+
+# OpenGL Resources
+/External_Resources
